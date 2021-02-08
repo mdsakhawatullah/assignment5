@@ -1,9 +1,14 @@
 body{
     max-width: 80%;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center;
 }
+
+.card-title{
+    text-align: center;
+}
+
 .container{
     text-align: center;
 }
@@ -11,9 +16,7 @@ body{
 .searchDiv{
     max-width: 800px;
 }
-.card-title{
-    text-align: center;
-}
+
 #foodCard{
     border-radius: 10px;
     background-color: #F8F7F5;
@@ -21,18 +24,19 @@ body{
 }
 
 #foodDetails{
-    padding-top: 40px;
-    justify-content: center;
-    width: 600px;
+    width: 60%;
+    padding-top: 30px;
     display: none;
-    margin-left: auto;
-    margin-right: auto;
 }
+
 #foodDetails img{
     width: 50%;
-    border-radius: 10px;
-   
 }
+.mealdetails{
+    padding-right: 10px;
+    font-size: 25px;
+}
+
 #ingredientList{
     list-style-type: none;
 }

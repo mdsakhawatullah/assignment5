@@ -1,9 +1,9 @@
 // getting search value
 const mealItems = () => {
     document.getElementById('heading').style.display = "block";
+    document.getElementById('errorBtn').style.display = "none";
     document.getElementById('foodCard').innerHTML = ``;
     document.getElementById('foodDetails').style.display = "none";
-    document.getElementById('errorBtn').style.display = "none";
     const input = document.getElementById('mealSearch').value
     const inputLength = input.length
     if (inputLength == 1) {
@@ -71,10 +71,10 @@ const itemDetails = (foodId) => {
     .then(data => {
         const items = data.meals[0];
         const insertedItem =`
-        <img src="${items.strMealThumb}" width="700px" alt="">
+        <img src="${items.strMealThumb}"  alt="">
         <h2>${items.strMeal}</h2>
-        <h4>Ingredients</h4>
-        <ul id="ingredientList">
+        <h4 class="mealdetails>Ingredients</h4>
+        <ul class="mealdetails id="ingredientList">
         </ul>
         `
         itemsContainer.innerHTML = insertedItem
