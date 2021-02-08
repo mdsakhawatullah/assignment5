@@ -1,5 +1,6 @@
 // getting search value
 const mealItems = () => {
+    document.getElementById('heading').style.display = "block";
     document.getElementById('foodCard').innerHTML = ``;
     document.getElementById('foodDetails').style.display = "none";
     document.getElementById('errorBtn').style.display = "none";
@@ -84,7 +85,7 @@ const itemDetails = (foodId) => {
             <li>3.${items.strIngredient3}</li>
             <li>4.${items.strIngredient4}</li>
             <li>5.${items.strIngredient5}</li>
-            <li>6.${items.strIngredient6}</li>
+            
         `
         ingredientList.innerHTML = itemLists;
     })
