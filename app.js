@@ -71,9 +71,10 @@ const itemDetails = (foodId) => {
     .then(data => {
         const items = data.meals[0];
         const insertedItem =`
+
         <img id="imageBorder" src="${items.strMealThumb}" alt="">
         <h2>${items.strMeal}</h2>
-        <h4 class="mealdetails>Ingredients</h4>
+        <h4>Ingredients</h4>
         <div class="mealdetails" id="ingredientList">
         </div>
         `
