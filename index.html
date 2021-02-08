@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Food Api</title>
+</head>
+
+<body>
+    
+    <div class="container searchDiv m-auto py-5" >
+    <div class="d-flex">
+            <input class="form-control" id="mealSearch" type="text" placeholder="Enter a food (ex:beef,chicken)">
+            <button class="btn btn-danger" onclick="mealItems()" type="submit">Search</button>
+        </div>
+    </div>
+
+    <div id="foodDetails">
+        
+
+    </div>
+
+   <div class="container mt-5" id="foodQuantity" >
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 shadow-none p-3 mb-5 bg-white rounded" id="foodCard">
+            <h2 class = "title m-auto py-5">Your Search Results:</h2>
+
+        </div>
+
+    </div>
+    <div id="errorBtn">
+        <h2>Enter a Valid Meal Name!!</h2>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

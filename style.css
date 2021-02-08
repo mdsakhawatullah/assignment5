@@ -1,0 +1,59 @@
+body{
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.container{
+    text-align: center;
+}
+
+
+.searchDiv{
+    max-width: 800px;
+}
+.card-title{
+    text-align: center;
+}
+#foodCard{
+    border-radius: 10px;
+    background-color: #F8F7F5;
+    border: none;
+}
+
+#foodDetails{
+    padding-top: 40px;
+    justify-content: center;
+    width: 600px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+#foodDetails img{
+    width: 50%;
+    border-radius: 10px;
+}
+#ingredientList{
+    list-style-type: none;
+}
+#errorBtn{
+    display: none;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.recipeBtn{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5%;
+    width: 150px;
+    margin: auto;
+    border-radius: 2rem;
+}
