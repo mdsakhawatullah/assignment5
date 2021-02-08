@@ -37,9 +37,6 @@ body{
     font-size: 25px;
 }
 
-#ingredientList{
-    list-style-type: none;
-}
 #errorBtn{
     display: none;
     color: black;
@@ -61,4 +58,7 @@ body{
     width: 150px;
     margin: auto;
     border-radius: 2rem;
+}
+#imageBorder{
+    border-radius: 50%;
 }

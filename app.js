@@ -71,20 +71,25 @@ const itemDetails = (foodId) => {
     .then(data => {
         const items = data.meals[0];
         const insertedItem =`
-        <img src="${items.strMealThumb}"  alt="">
+        <img id="imageBorder" src="${items.strMealThumb}" alt="">
         <h2>${items.strMeal}</h2>
         <h4 class="mealdetails>Ingredients</h4>
-        <ul class="mealdetails id="ingredientList">
-        </ul>
+        <div class="mealdetails" id="ingredientList">
+        </div>
         `
         itemsContainer.innerHTML = insertedItem
         const ingredientList = document.getElementById('ingredientList')
         const itemLists = `
-            <li>1.${items.strIngredient1}</li>
-            <li>2.${items.strIngredient2}</li>
-            <li>3.${items.strIngredient3}</li>
-            <li>4.${items.strIngredient4}</li>
-            <li>5.${items.strIngredient5}</li>
+            <h6>${items.strIngredient1}</h6>
+            <h6>${items.strIngredient2}</h6>
+            <h6>${items.strIngredient3}</h6>
+            <h6>${items.strIngredient4}</h6>
+            <h6>${items.strIngredient5}</h6>
+            <h6>${items.strIngredient6}</h6>
+            <h6>${items.strIngredient7}</h6>
+            <h6>${items.strIngredient8}</h6>
+            <h6>${items.strIngredient9}</h6>
+            <h6>${items.strIngredient10}</h6>
             
         `
         ingredientList.innerHTML = itemLists;
